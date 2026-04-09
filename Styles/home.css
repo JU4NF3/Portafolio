@@ -131,7 +131,7 @@ body {
 .Aboutme .stats {
 display: flex;  
 justify-content: space-around;
-paddibng: 15px;
+padding: 15px;
 }
 
 .Aboutme .stat h2 {

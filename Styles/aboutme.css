@@ -1,24 +1,31 @@
 body {
   width: 100%;
+  margin: 0;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-style: normal;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 .navbar {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   background: #F2E205;
   padding: 8px 52px;
 }
 .navbar .logo {
   border-radius: 20px;
-  display: flex;
-  margin-right: 280px;
+  display: block;
 }
 
 .navbar .menu {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 50px;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
@@ -37,14 +44,16 @@ body {
 
 .hero {
   background-color: #ffffff;
-  height: 500px;
+  min-height: 500px;
   display: flex;
   align-items: center;
+  padding-right: 60px;
   padding-left: 60px;
 }
 
 .hero-text {
   max-width: 400px;
+  width: 100%;
 }
 
 .hero-text h3 {
@@ -75,13 +84,19 @@ body {
   border-radius: 20px;
 }
 
-.botones button: hover {
+.botones button hover {
+  background: black;
+  color: white;
+}
+
+.botones button:hover {
   background: black;
   color: white;
 }
 
 .About-Skills {
   display: flex;
+  gap: 40px;
   justify-content: space-between;
   padding: 80px;
   background-color: Black;
@@ -110,7 +125,7 @@ body {
 
 .Estadisticas {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   
 }
 
@@ -140,6 +155,7 @@ body {
 
 .Contacto {
   display: flex;
+  gap: 40px;
   justify-content: space-between;
   padding: 80px;
   background-color: white;
@@ -254,4 +270,140 @@ textarea {
   text-align: center;
   padding: 10px;
   
+}
+
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 12px 28px;
+  }
+
+  .navbar .menu {
+    gap: 22px;
+  }
+
+  .hero {
+    min-height: auto;
+    padding: 56px 28px;
+  }
+
+  .hero-text h1 {
+    font-size: 34px;
+  }
+
+  .About-Skills,
+  .Contacto,
+  .footer {
+    padding: 56px 28px;
+  }
+
+  .About-Skills {
+    flex-direction: column;
+  }
+
+  .Info-izq,
+  .Der-Skills {
+    width: 100%;
+  }
+
+  .Contacto-izq,
+  .Contacto-der {
+    width: 100%;
+  }
+
+  .footer {
+    gap: 28px;
+  }
+
+  .footer-izq,
+  .footer-centro {
+    width: 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 16px 20px;
+  }
+
+  .navbar .menu {
+    gap: 12px;
+    width: 100%;
+  }
+
+  .navbar .menu a {
+    width: auto;
+    font-size: 15px;
+  }
+
+  .hero {
+    padding: 42px 20px;
+  }
+
+  .hero-text h1 {
+    font-size: 30px;
+  }
+
+  .hero-text p {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  .botones {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .About-Skills,
+  .Contacto,
+  .footer {
+    padding: 42px 20px;
+  }
+
+  .Contacto {
+    flex-direction: column;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-izq,
+  .footer-centro {
+    width: 100%;
+  }
+
+  .copyright {
+    font-size: 14px;
+    padding: 12px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-text h3 {
+    width: max-content;
+    font-size: 14px;
+  }
+
+  .hero-text h1 {
+    font-size: 26px;
+    line-height: 1.2;
+  }
+
+  .About-Skills h2,
+  .Contacto-izq h2 {
+    font-size: 24px;
+  }
+
+  .Estadisticas h2 {
+    font-size: 34px;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+  }
 }
