@@ -1,24 +1,30 @@
 body {
+  margin: 0;
   width:100%;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-style: normal;
+  overflow-x: hidden;
 }
 
 .navbar {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
   background: #F2E205;
   padding: 8px 52px;
 }
 .navbar .logo {
   border-radius: 20px;
   display: flex;
-  margin-right: 280px;
+  margin-right: 0;
 }
 
 .navbar .menu {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 55px;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
@@ -37,10 +43,19 @@ body {
 }
 
 .Hero {
-  height: 345px;
+  min-height: 345px;
   width: 100%;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 0 52px;
+  box-sizing: border-box;
   margin-top: 60px;
+}
+.Hero > div:first-child {
+  width: 100%;
+  max-width: 640px;
 }
 .Hero .Hero-Label {
   display: flex;
@@ -100,9 +115,17 @@ body {
 }
 .Hero-Image {
   display: flex;
+  width: 100%;
+  max-width: 350px;
 }
 .Hero-Image .Image {
-  Width: 200px;
+  width: 100%;
+}
+
+.Hero-Image .Image img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 
@@ -115,7 +138,7 @@ body {
 }
 .Aboutme {
   text-align: center;
-  height: 330px;
+  min-height: 330px;
   background: #1c1c1c;
   padding: 40px;
   color: White;
@@ -131,7 +154,7 @@ body {
 .Aboutme .stats {
 display: flex;  
 justify-content: space-around;
-paddibng: 15px;
+padding: 15px;
 }
 
 .Aboutme .stat h2 {
@@ -140,18 +163,19 @@ paddibng: 15px;
 
 .Servicios {
   display: flex;
+  gap: 30px;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
 .Servicios .Servicios-TP {
-  margin: 45px 52px;
+  margin: 45px 0 45px 52px;
   
 }
 
 .Servicios .Bloque-Servicios {
-  margin: 45px 52px 0px 20px;
+  margin: 45px 52px 0 0;
 }
 
 .servicios-D {
@@ -251,7 +275,7 @@ paddibng: 15px;
 }
 .skills {
   max-width: 1100px;
-  margin: 50px;
+  margin: 50px auto;
   padding: 20px;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
@@ -290,6 +314,8 @@ paddibng: 15px;
 
 .Contacto {
   display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
   justify-content: space-between;
   padding: 80px;
   background-color: white;
@@ -297,6 +323,7 @@ paddibng: 15px;
 
 .Contacto-izq, .Contacto-der {
   width: 45%;
+  min-width: 280px;
 }
 
 .Contacto-izq h2 {
@@ -357,21 +384,27 @@ textarea {
   color: white;
   padding: 60px 80px;
   display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   
 }
 
 .footer-izq {
-  width: 30%;
+  width: 32%;
   
 }
 
 .footer-centro {
-  width: 30%;
+  width: 32%;
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+
+.footer-der {
+  width: 32%;
 }
 
 .footer-centro a {
@@ -396,6 +429,166 @@ textarea {
   justify-content: center;
   align-items: center;
   
+}
+
+.copyright {
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 0 20px 25px;
+}
+
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 10px 26px;
+    gap: 16px;
+  }
+
+  .navbar .menu {
+    gap: 24px;
+  }
+
+  .Hero {
+    padding: 0 26px;
+    margin-top: 40px;
+  }
+
+  .Hero .Hero-Label,
+  .Hero .Titulo,
+  .Hero .Descripcion,
+  .Hero .Hero-Buttons {
+    margin-left: 0;
+  }
+
+  .Servicios {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .Servicios .Servicios-TP,
+  .Servicios .Bloque-Servicios {
+    margin: 30px 26px 0;
+  }
+
+  .Contacto {
+    padding: 50px 26px;
+  }
+
+  .Contacto-izq,
+  .Contacto-der {
+    width: 100%;
+  }
+
+  .footer {
+    padding: 40px 26px;
+  }
+
+  .footer-izq,
+  .footer-centro,
+  .footer-der {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    justify-content: center;
+  }
+
+  .navbar .menu {
+    justify-content: center;
+    gap: 14px;
+  }
+
+  .Hero {
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: auto;
+    margin-top: 24px;
+    gap: 20px;
+  }
+
+  .Hero .Titulo {
+    height: auto;
+  }
+
+  .Hero .Descripcion {
+    height: auto;
+    margin: 2px 0 10px;
+    padding: 0;
+  }
+
+  .Hero .Hero-Buttons {
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+
+  .Hero-Image {
+    max-width: 100%;
+  }
+
+  .Aboutme {
+    padding: 30px 20px;
+  }
+
+  .Aboutme .stats {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .portafolio {
+    padding: 35px 20px;
+  }
+
+  .portafolio .portafolio-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .skills {
+    margin: 30px auto;
+    padding: 20px;
+  }
+
+  .skills .skills-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .Contacto {
+    padding: 35px 20px;
+  }
+
+  .footer {
+    padding: 30px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar .menu a {
+    font-size: 13px;
+    width: auto;
+  }
+
+  .Hero {
+    padding: 0 20px;
+  }
+
+  .Hero .Titulo {
+    font-size: 30px;
+    line-height: 1.2;
+  }
+
+  .Hero .Descripcion {
+    font-size: 14px;
+  }
+
+  .card {
+    border-radius: 24px;
+  }
+
+  .Contacto-izq h2 {
+    font-size: 24px;
+  }
 }
 
 .copyright {
