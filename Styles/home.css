@@ -1,0 +1,407 @@
+body {
+  width:100%;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.navbar {
+  display: flex;
+  background: #F2E205;
+  padding: 8px 52px;
+}
+.navbar .logo {
+  border-radius: 20px;
+  display: flex;
+  margin-right: 280px;
+}
+
+.navbar .menu {
+  display: flex;
+  align-items: center;
+  gap: 55px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.navbar .menu a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 14px;
+  width: 65px;
+}
+.navbar .menu a:hover {
+  color: #ffffff;
+ 
+}
+
+.Hero {
+  height: 345px;
+  width: 100%;
+  display: flex;
+  margin-top: 60px;
+}
+.Hero .Hero-Label {
+  display: flex;
+  padding: 5px;
+  height: 10px;
+  margin-left: 52px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #F2E205;
+  width: 130px;
+  border-radius: 20px;
+  height: 20px;
+}
+.Hero .Titulo {
+  display: flex;
+  padding: 5px;
+  height: 105px;
+  margin-left: 52px;
+  margin-top: 10px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+}
+.Hero .Descripcion {
+  display: flex;
+  padding: 10px;
+  margin: 2px 15px 10px 52px;
+  height: 45px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+.Hero .Hero-Buttons{
+  padding: 6px;
+  display: flex;
+  gap: 35px;
+  margin-left: 52px;
+}
+.Hero .btn-Primary{
+  padding: 6px;
+  display: flex;
+  text-decoration: none;
+  border-radius: 17px;
+  color: black;
+  background-color: #F2E205;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  
+}
+.Hero .btn-Primary:hover {
+  background-color: black;
+  color: white;
+  
+}
+.Hero-Image {
+  display: flex;
+}
+.Hero-Image .Image {
+  Width: 200px;
+}
+
+
+.body {
+  background: #000000;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.Aboutme {
+  text-align: center;
+  height: 330px;
+  background: #1c1c1c;
+  padding: 40px;
+  color: White;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.Aboutme .About-T {
+  justify-content: center;
+}
+
+.Aboutme .stats {
+display: flex;  
+justify-content: space-around;
+paddibng: 15px;
+}
+
+.Aboutme .stat h2 {
+  color: #F2E205;
+}
+
+.Servicios {
+  display: flex;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.Servicios .Servicios-TP {
+  margin: 45px 52px;
+  
+}
+
+.Servicios .Bloque-Servicios {
+  margin: 45px 52px 0px 20px;
+}
+
+.servicios-D {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card {
+  background-color: #F2E205;
+  padding: 20px;
+  border-radius: 40px;
+  color: #000;
+  margin-bottom: 35px;
+}
+
+.card h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.card p {
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+.portafolio {
+  margin-bottom: 30px;
+  padding: 50px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: black;
+  color: white;
+}
+
+.portfolio h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.portafolio p {
+  font-size: 18px;
+  max-width: 700px;
+  margin: 0 auto 50px;
+}
+
+.portafolio .portafolio-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.portafolio-grid .card {
+  background: #1a1a1a;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+}
+
+.card img {
+  width: 100%;
+  display: block;
+  border-radius: 20px;
+}
+
+.portafolio-grid .card-info {
+  padding: 6px;
+  text-align: left;
+  padding: 10px;
+}
+
+.portafolio-grid .card-info h3 {
+  margin: 0;
+  font-size: 16px;
+  color: white;
+}
+
+.portafolio-grid .card-info span {
+  font-size: 13px;
+  color: #999;
+}
+
+.flecha {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: none;
+  background: #ff4d2d;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+.skills {
+  max-width: 1100px;
+  margin: 50px;
+  padding: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.skills h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+.skills .subtitle-sk {
+  text-align: center;
+  font-size: 14px;
+}
+
+.skills .skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px 50px;
+}
+.skill .label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+.skills .barra {
+  height: 5px;
+  background: grey;
+  border-radius: 5px;
+}
+
+.fill {
+  height: 100%;
+  background: #F27405;
+}
+
+.Contacto {
+  display: flex;
+  justify-content: space-between;
+  padding: 80px;
+  background-color: white;
+}
+
+.Contacto-izq, .Contacto-der {
+  width: 45%;
+}
+
+.Contacto-izq h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  
+}
+
+.Contacto-izq p {
+  margin: 15px 0;
+  
+}
+
+.Redes {
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+  
+}
+
+.Icono {
+  width: 40px;
+  height: 40px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Contacto-der {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+input, textarea {
+  padding: 12px;
+  background: #F2E205;
+  border-radius: 10px;
+}
+
+textarea {
+  height: 80px;
+}
+
+.Boton-contacto {
+  width: 100px;
+  height: 30px;
+  background: #F2E205;
+  color: black;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.footer {
+  background: black;
+  color: white;
+  padding: 60px 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.footer-izq {
+  width: 30%;
+  
+}
+
+.footer-centro {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-centro a {
+  color: white;
+  text-decoration: none;
+  
+}
+
+.Redes {
+  display: flex;
+  gap: 15px;
+  
+}
+
+.Icono-Foot {
+  width: 35px;
+  height: 35px;
+  background: white;
+  color: black;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.copyright {
+  background: black;
+  color: gray;
+  text-align: center;
+  padding: 10px;
+  
+}
