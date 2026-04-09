@@ -1,0 +1,592 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #F2E205;
+  padding: 8px 30px;
+  width: 100%;
+}
+.navbar .logo {
+  border-radius: 20px;
+  display: block;
+  margin-right: 0;
+}
+
+.navbar .menu {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.navbar .menu a {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: #000000;
+  font-size: 16px;
+  width: 70px;
+  min-height: 44px;
+  padding: 6px 4px;
+}
+.navbar .menu a:hover {
+  color: #ffffff;
+}
+
+.Hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px;
+  background: black;
+  
+}
+
+.Izq {
+ width: 50%;
+  
+}
+
+.subtitulo {
+ background-color: #F2E205;
+ display: inline-block;
+ padding: 5px 10px;
+ font-size: 14px;
+ margin-bottom: 15px;
+ border-radius: 20px;
+}
+
+.Hero h1 {
+ font-size: 48px;
+ margin: 0;
+ color: white;
+}
+
+.Hero p {
+ margin-top: 20px;
+ line-height: 1.6;
+ color: white;
+        }
+
+.buttons {
+  margin-top: 30px;
+  display: flex;
+  gap: 15px;
+}
+
+.Hero-boton {
+  background-color: #F2E205;
+  color: Black;
+  padding: 12px 20px;
+  cursor: pointer;
+  border-color: black;
+  border-radius: 20px;
+  min-height: 44px;
+}
+.Img {
+ width: 35%;
+}
+
+.Img img {
+  width: 100%;
+  display: block;
+  border-radius: 12px;
+}
+
+.Proceso {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  margin: 20px;
+  gap: 20px;
+  height: auto;
+}
+
+.box-der {
+  width: auto;
+  flex: 1 1 280px;
+  padding: 15px;
+  border: 2px #4da6ff;
+  text-align: left;
+  background: #F2E205;
+  border-radius: 20px;
+}
+
+.box-mitad {
+  flex: 1 1 280px;
+  text-align: left;
+  background: gray;
+  border-radius: 20px;
+  padding: 15px;
+}
+
+.Rol {
+  display: flex;
+  justify-content: space-between;
+  padding: 80px;
+  background-color: black;
+}
+
+.left, .right {
+  width: 45%;
+}
+
+.Rol h2 {
+  color: #F2E205;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.Rol p {
+  line-height: 1.6;
+  margin-bottom: 20px;
+  Color: white;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  color: white;
+}
+
+li {
+    margin-bottom: 15px;
+}
+
+
+.Stats {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.box {
+    text-align: center;
+}
+
+.box h3 {
+    color: #F2E205;
+    font-size: 40px;
+    margin: 0;
+}
+
+.box p {
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+.portafolio {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto 30px;
+  margin-bottom: 30px;
+  padding: 50px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: black;
+  color: white;
+}
+
+.portfolio h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.portafolio h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.portafolio p {
+  font-size: 18px;
+  max-width: 700px;
+  margin: 0 auto 50px;
+}
+
+.portafolio .portafolio-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.portafolio-grid .card {
+  background: #1a1a1a;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+}
+
+.card img {
+  width: 100%;
+  display: block;
+  border-radius: 20px;
+}
+
+.portafolio-grid .card-info {
+  padding: 6px;
+  text-align: left;
+  padding: 10px;
+}
+
+.portafolio-grid .card-info h3 {
+  margin: 0;
+  font-size: 16px;
+  color: white;
+}
+
+.portafolio-grid .card-info span {
+  font-size: 13px;
+  color: #999;
+}
+
+.flecha {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: none;
+  background: #ff4d2d;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.Contacto {
+  display: flex;
+  justify-content: space-between;
+  padding: 80px;
+  background-color: white;
+}
+
+.Contacto-izq, .Contacto-der {
+  width: 45%;
+}
+
+.Contacto-izq h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  
+}
+
+.Contacto-izq p {
+  margin: 15px 0;
+  
+}
+
+.Contacto-izq a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.Redes {
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+  
+}
+
+.Icono {
+  width: 40px;
+  height: 40px;
+  background: white;
+  color: black;
+  text-decoration: none;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Contacto-der {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.Contacto-der form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.Contacto-der label {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  background: #F2E205;
+  border-radius: 10px;
+  border: 1px solid transparent;
+}
+
+textarea {
+  height: 80px;
+  resize: vertical;
+}
+
+.Boton-contacto {
+  width: 140px;
+  min-height: 40px;
+  background: #F2E205;
+  color: black;
+  cursor: pointer;
+  border-radius: 20px;
+  border: none;
+}
+
+
+.footer {
+  background: black;
+  color: white;
+  padding: 60px 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.footer-izq {
+  width: 30%;
+  
+}
+
+.footer-centro {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-centro a {
+  color: white;
+  text-decoration: none;
+  
+}
+
+.Redes {
+  display: flex;
+  gap: 15px;
+  
+}
+
+.Icono-Foot {
+  width: 35px;
+  height: 35px;
+  background: white;
+  color: black;
+  text-decoration: none;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.copyright {
+  background: black;
+  color: gray;
+  text-align: center;
+  padding: 10px;
+  
+}
+
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 10px 20px;
+  }
+
+  .navbar .menu {
+    gap: 18px;
+  }
+
+  .Hero,
+  .Rol,
+  .Contacto {
+    padding: 50px 40px;
+  }
+
+  .portafolio {
+    padding: 40px 30px;
+  }
+
+  .portafolio .portafolio-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .navbar .menu {
+    width: 100%;
+    gap: 14px;
+    flex-wrap: wrap;
+  }
+
+  .navbar .menu a {
+    width: auto;
+  }
+
+  .Hero,
+  .Rol,
+  .Contacto {
+    flex-direction: column;
+    padding: 36px 20px;
+    gap: 24px;
+  }
+
+  .Izq,
+  .Img,
+  .left,
+  .right,
+  .Contacto-izq,
+  .Contacto-der {
+    width: 100%;
+  }
+
+  .Hero h1 {
+    font-size: 36px;
+  }
+
+  .Hero p,
+  .Rol p,
+  .Contacto-izq p {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  .buttons {
+    flex-wrap: wrap;
+  }
+
+  .Proceso {
+    flex-direction: column;
+    margin: 14px;
+    padding: 14px;
+  }
+
+  .box-der,
+  .box-mitad {
+    width: 100%;
+  }
+
+  .Stats {
+    justify-content: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .portafolio {
+    padding: 36px 20px;
+  }
+
+  .portafolio p {
+    font-size: 16px;
+    margin: 0 auto 32px;
+  }
+
+  .portafolio .portafolio-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    padding: 40px 20px;
+  }
+
+  .footer-izq,
+  .footer-centro,
+  .footer-der {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 10px 14px;
+  }
+
+  .navbar .menu {
+    gap: 8px;
+  }
+
+  .subtitulo {
+    font-size: 12px;
+  }
+
+  .Hero h1 {
+    font-size: 30px;
+    line-height: 1.2;
+  }
+
+  .Hero,
+  .Rol,
+  .Contacto,
+  .portafolio {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  .Hero p,
+  .portafolio p {
+    font-size: 15px;
+  }
+
+  .Rol h2,
+  .Contacto-izq h2,
+  .portafolio h2 {
+    font-size: 24px;
+  }
+
+  .buttons {
+    width: 100%;
+  }
+
+  .Hero-boton,
+  .Boton-contacto {
+    width: 100%;
+  }
+
+  .flecha {
+    right: 10px;
+    bottom: 10px;
+  }
+
+  .copyright {
+    font-size: 13px;
+  }
+}
