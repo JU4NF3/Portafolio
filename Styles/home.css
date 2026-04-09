@@ -1,0 +1,625 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #F2E205;
+  padding: 8px 52px;
+}
+.navbar .logo {
+  border-radius: 20px;
+  display: block;
+  margin-right: 0;
+}
+
+.navbar .menu {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.navbar .menu a {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: #000000;
+  font-size: 14px;
+  width: 65px;
+  min-height: 44px;
+}
+.navbar .menu a:hover {
+  color: #ffffff;
+ 
+}
+
+.Hero {
+  min-height: 345px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 60px;
+  gap: 20px;
+  padding-right: 52px;
+}
+.Hero .Hero-Label {
+  display: flex;
+  padding: 5px;
+  height: 10px;
+  margin-left: 52px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #F2E205;
+  width: 130px;
+  border-radius: 20px;
+  height: 20px;
+}
+.Hero .Titulo {
+  display: flex;
+  padding: 5px;
+  height: 105px;
+  margin-left: 52px;
+  margin-top: 10px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+}
+.Hero .Descripcion {
+  display: flex;
+  padding: 10px;
+  margin: 2px 15px 10px 52px;
+  height: 45px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+.Hero .Hero-Buttons{
+  padding: 6px;
+  display: flex;
+  gap: 35px;
+  margin-left: 52px;
+  flex-wrap: wrap;
+}
+.Hero .btn-Primary{
+  padding: 6px;
+  display: flex;
+  text-decoration: none;
+  border-radius: 17px;
+  color: black;
+  background-color: #F2E205;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  min-height: 44px;
+  align-items: center;
+  justify-content: center;
+  
+}
+.Hero .btn-Primary:hover {
+  background-color: black;
+  color: white;
+  
+}
+.Hero-Image {
+  display: flex;
+}
+.Hero-Image .Image {
+  width: 320px;
+}
+
+
+.body {
+  background: #000000;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.Aboutme {
+  text-align: center;
+  min-height: 330px;
+  background: #1c1c1c;
+  padding: 40px;
+  color: White;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.Aboutme .About-T {
+  justify-content: center;
+}
+
+.Aboutme .stats {
+display: flex;  
+justify-content: space-around;
+padding: 15px;
+gap: 16px;
+flex-wrap: wrap;
+}
+
+.Aboutme .stat h2 {
+  color: #F2E205;
+}
+
+.Servicios {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.Servicios .Servicios-TP {
+  margin: 45px 52px;
+  
+}
+
+.Servicios .Bloque-Servicios {
+  margin: 45px 52px 0px 20px;
+}
+
+.servicios-D {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card {
+  background-color: #F2E205;
+  padding: 20px;
+  border-radius: 40px;
+  color: #000;
+  margin-bottom: 35px;
+}
+
+.card h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.card p {
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+.portafolio {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto 30px;
+  margin-bottom: 30px;
+  padding: 50px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: black;
+  color: white;
+}
+
+.portfolio h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.portafolio p {
+  font-size: 18px;
+  max-width: 700px;
+  margin: 0 auto 50px;
+}
+
+.portafolio .portafolio-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.portafolio-grid .card {
+  background: #1a1a1a;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+}
+
+.card img {
+  width: 100%;
+  display: block;
+  border-radius: 20px;
+}
+
+.portafolio-grid .card-info {
+  padding: 6px;
+  text-align: left;
+  padding: 10px;
+}
+
+.portafolio-grid .card-info h3 {
+  margin: 0;
+  font-size: 16px;
+  color: white;
+}
+
+.portafolio-grid .card-info span {
+  font-size: 13px;
+  color: #999;
+}
+
+.flecha {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: none;
+  background: #ff4d2d;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+.skills {
+  max-width: 1100px;
+  margin: 50px auto;
+  padding: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.skills h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+.skills .subtitle-sk {
+  text-align: center;
+  font-size: 14px;
+}
+
+.skills .skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px 50px;
+}
+.skill .label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+.skills .barra {
+  height: 5px;
+  background: grey;
+  border-radius: 5px;
+}
+
+.fill {
+  height: 100%;
+  background: #F27405;
+}
+
+.Contacto {
+  display: flex;
+  justify-content: space-between;
+  padding: 80px;
+  background-color: white;
+}
+
+.Contacto-izq, .Contacto-der {
+  width: 45%;
+}
+
+.Contacto-izq h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  
+}
+
+.Contacto-izq p {
+  margin: 15px 0;
+  
+}
+
+.Redes {
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+  
+}
+
+.Icono {
+  width: 40px;
+  height: 40px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Contacto-der {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  background: #F2E205;
+  border-radius: 10px;
+  border: 1px solid transparent;
+}
+
+textarea {
+  height: 80px;
+}
+
+.Boton-contacto {
+  width: 140px;
+  min-height: 40px;
+  background: #F2E205;
+  color: black;
+  cursor: pointer;
+  border-radius: 20px;
+  border: none;
+}
+
+.footer {
+  background: black;
+  color: white;
+  padding: 60px 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.footer-izq {
+  width: 30%;
+  
+}
+
+.footer-centro {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-centro a {
+  color: white;
+  text-decoration: none;
+  
+}
+
+.Redes {
+  display: flex;
+  gap: 15px;
+  
+}
+
+.Icono-Foot {
+  width: 35px;
+  height: 35px;
+  background: white;
+  color: black;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.copyright {
+  background: black;
+  color: gray;
+  text-align: center;
+  padding: 10px;
+  
+}
+
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 10px 20px;
+  }
+
+  .Hero {
+    margin-top: 30px;
+    padding-right: 20px;
+  }
+
+  .Hero .Hero-Label,
+  .Hero .Titulo,
+  .Hero .Descripcion,
+  .Hero .Hero-Buttons {
+    margin-left: 20px;
+  }
+
+  .Servicios {
+    flex-direction: column;
+  }
+
+  .Servicios .Servicios-TP,
+  .Servicios .Bloque-Servicios {
+    margin: 20px;
+  }
+
+  .portafolio {
+    padding: 40px 24px;
+  }
+
+  .portafolio .portafolio-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .skills {
+    margin: 30px auto;
+    padding: 20px;
+  }
+
+  .Contacto,
+  .footer {
+    padding: 50px 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 10px 16px;
+  }
+
+  .navbar .menu {
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 10px 14px;
+  }
+
+  .navbar .menu a {
+    width: auto;
+  }
+
+  .Hero {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    min-height: 0;
+    margin-top: 16px;
+    padding: 0 16px;
+  }
+
+  .Hero .Hero-Label,
+  .Hero .Titulo,
+  .Hero .Descripcion,
+  .Hero .Hero-Buttons {
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  .Hero .Titulo {
+    height: auto;
+    font-size: 34px;
+    line-height: 1.2;
+  }
+
+  .Hero .Descripcion {
+    height: auto;
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+  }
+
+  .Hero-Image .Image {
+    width: 100%;
+    max-width: 420px;
+  }
+
+  .Aboutme {
+    height: auto;
+    padding: 30px 16px;
+  }
+
+  .Servicios .Servicios-TP,
+  .Servicios .Bloque-Servicios {
+    margin: 16px;
+  }
+
+  .card {
+    border-radius: 24px;
+  }
+
+  .portafolio {
+    padding: 30px 16px;
+  }
+
+  .portafolio .portafolio-grid,
+  .skills .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .skills {
+    padding: 0 16px 20px;
+  }
+
+  .Contacto {
+    flex-direction: column;
+    gap: 24px;
+    padding: 36px 16px;
+  }
+
+  .Contacto-izq,
+  .Contacto-der {
+    width: 100%;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 36px 16px;
+  }
+
+  .footer-izq,
+  .footer-centro,
+  .footer-der {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .Hero .Titulo {
+    font-size: 28px;
+  }
+
+  .Hero .Hero-Buttons {
+    width: 100%;
+    gap: 10px;
+  }
+
+  .Hero .btn-Primary,
+  .Boton-contacto {
+    width: 100%;
+  }
+
+  .Aboutme,
+  .portafolio,
+  .Contacto,
+  .footer {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  .skills h2,
+  .portafolio h2,
+  .Contacto-izq h2 {
+    font-size: 24px;
+  }
+
+  .copyright {
+    font-size: 13px;
+  }
+}
