@@ -42,7 +42,9 @@ img {
 .navbar .menu a {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   text-decoration: none;
+  text-align: center;
   color: #000000;
   font-size: 16px;
   width: 70px;
@@ -588,5 +590,94 @@ textarea {
 
   .copyright {
     font-size: 13px;
+  }
+}
+
+@keyframes fadePage {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes riseUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+body {
+  animation: fadePage 0.6s ease-out both;
+}
+
+.navbar,
+.Hero,
+.Proceso,
+.Rol,
+.portafolio,
+.Contacto,
+.footer,
+.copyright {
+  animation: riseUp 0.7s ease both;
+}
+
+.Hero { animation-delay: 0.06s; }
+.Proceso { animation-delay: 0.12s; }
+.Rol { animation-delay: 0.18s; }
+.portafolio { animation-delay: 0.24s; }
+.Contacto { animation-delay: 0.3s; }
+.footer, .copyright { animation-delay: 0.34s; }
+
+.navbar .logo,
+.navbar .menu a,
+.Hero-boton,
+.box-der,
+.box-mitad,
+.portafolio-grid .card,
+.flecha,
+.Boton-contacto,
+.Icono,
+.Icono-Foot,
+.Img img {
+  transition: transform 0.28s ease, box-shadow 0.28s ease, background-color 0.28s ease, color 0.28s ease;
+}
+
+.navbar .logo:hover,
+.Img img:hover {
+  transform: translateY(-3px) scale(1.02);
+}
+
+.navbar .menu a:hover {
+  transform: translateY(-2px);
+}
+
+.Hero-boton:hover,
+.Boton-contacto:hover,
+.flecha:hover,
+.Icono:hover,
+.Icono-Foot:hover {
+  transform: translateY(-2px) scale(1.04);
+}
+
+.box-der:hover,
+.box-mitad:hover,
+.portafolio-grid .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 14px 24px rgba(0, 0, 0, 0.22);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
   }
 }
