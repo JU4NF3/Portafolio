@@ -3,51 +3,61 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portafolio de Juan Felipe - Diseno UI/UX y modelado 3D en Blender.">
+  <meta name="description" content="Portafolio de Juan Felipe - Diseño UI/UX y modelado 3D en Blender.">
   <title>Portafolio | Juan Felipe</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <link rel="stylesheet" href="../Styles/portafolio.css">
 </head>
 <body>
   <header class="navbar">
     <div>
-      <img class="logo" src="https://media.istockphoto.com/id/1251309191/es/vector/ronda-tres-l%C3%ADneas-logotipo-de-letras-j.jpg?s=612x612&w=0&k=20&c=R588FB8mQm09cIgryJYgyYBR8cDJ035kQPYQjfXEAkM=" alt="Logo de Juan Felipe" width="48">
+      <a href="home.html" aria-label="Ir al inicio">
+        <img class="logo" src="https://media.istockphoto.com/id/1251309191/es/vector/ronda-tres-l%C3%ADneas-logotipo-de-letras-j.jpg?s=612x612&w=0&k=20&c=R588FB8mQm09cIgryJYgyYBR8cDJ035kQPYQjfXEAkM=" alt="Logo de Juan Felipe" width="48">
+      </a>
     </div>
-    <nav class="menu" aria-label="Navegacion principal">
-      <a href="#sobre-mi">Sobre mi</a>
-      <a href="#servicios">Servicios</a>
-      <a href="#portafolio">Portafolio</a>
-      <a href="#blog">Blog</a>
+    <input type="checkbox" id="menu-hamburguesa-portafolio" class="menu-hamburguesa-checkbox">
+    <label for="menu-hamburguesa-portafolio" class="menu-hamburguesa" aria-label="Abrir menu">
+      <i class="fa-solid fa-bars icon-open"></i>
+      <i class="fa-solid fa-xmark icon-close"></i>
+    </label>
+    <nav class="menu" aria-label="Navegación principal">
+      <a href="aboutme.html">Sobre mí</a>
+      <a href="home.html#servicios">Servicios</a>
+      <a href="portafolio.html">Portafolio</a>
+      <a href="#contacto">Contacto</a>
     </nav>
   </header>
 
   <main>
+    <!--Hero section-->
     <section id="sobre-mi">
       <div class="Hero">
         <div class="Izq">
           <div class="subtitulo">Mi portafolio</div>
 
-          <h1>Diseno 3D <br> Blender</h1>
+          <h1>Diseño 3D <br> Blender</h1>
           <p>
-            Revoluciono paginas con diseno no solo por medio de la interfaz, tambien por medio de WebGL para la visualizacion de productos y experiencias mas llamativas.
+            Revoluciono páginas con diseño no solo por medio de la interfaz, también por medio de WebGL para la visualización de productos y experiencias más llamativas.
           </p>
 
           <div class="buttons">
-            <button type="button" class="Hero-boton">Mira mi Proyecto</button>
-            <button type="button" class="Hero-boton">Proceso Creativo</button>
+            <a href="#portafolio" class="Hero-boton">Mira mis Proyecto</a>
+            <a href="#proceso-creativo" class="Hero-boton">Proceso Creativo</a>
           </div>
         </div>
 
         <div class="Img">
-          <img src="https://i.postimg.cc/wvCsZWbB/10864345.jpg" alt="Render 3D de proyecto en Blender" loading="lazy">
+          <img src="../Images/Pelo Blender.png" alt="Render 3D de proyecto en Blender" loading="lazy">
         </div>
       </div>
     </section>
 
+    <!--Proceso section-->
     <section id="servicios">
       <div class="Proceso">
         <div class="box-der">
           <h2>Objetivo</h2>
-          <p>Hacer una forma en 3D realista, divertida, colorida y que llame la atencion facilmente.</p>
+          <p>Hacer una forma en 3D realista, divertida, colorida y que llame la atención fácilmente.</p>
         </div>
 
         <div class="box-mitad">
@@ -57,24 +67,25 @@
 
         <div class="box-der">
           <h2>Resultado</h2>
-          <p>El diseno 3D final marco la diferencia y logro algo mas de lo que el cliente queria.</p>
+          <p>El diseño 3D final marcó la diferencia y logró algo más de lo que el cliente quería.</p>
         </div>
       </div>
     </section>
 
+    <!--Mi rol section-->
     <section>
       <div class="Rol">
         <div class="left">
           <h2>Mi Rol</h2>
 
           <p>
-            Yo soy quien disena, idea y encuentra la esencia de la propuesta que se quiere producir experimental y visualmente.
+            Yo soy quien diseña, idea y encuentra la esencia de la propuesta que se quiere producir experimental y visualmente.
           </p>
 
           <ul>
-            <li>Investigacion</li>
-            <li>Arquitectura de la informacion</li>
-            <li>Diseno UI/UX</li>
+            <li>Investigación</li>
+            <li>Arquitectura de la información</li>
+            <li>Diseño UI/UX</li>
             <li>Prototipado</li>
           </ul>
         </div>
@@ -82,18 +93,18 @@
         <div class="right">
           <h2>Impacto</h2>
           <p>
-            Soy Juan Felipe y mi proposito es disenar a partir de la exploracion de ideas con experiencias y creatividad.
+            Soy Juan Felipe y mi propósito es diseñar a partir de la exploración de ideas con experiencias y creatividad.
           </p>
 
           <div class="Stats">
             <div class="box">
               <h3>40%</h3>
-              <p>Conversion</p>
+              <p>Conversión</p>
             </div>
 
             <div class="box">
               <h3>-20%</h3>
-              <p>Interaccion</p>
+              <p>Interacción</p>
             </div>
 
             <div class="box">
@@ -105,42 +116,80 @@
       </div>
     </section>
 
-    <section id="portafolio" class="portafolio">
-      <h2>Mi Galeria</h2>
-      <p>
-        Explora mis servicios de diseno UI/UX y 3D a profundidad. Mira el proceso.
-      </p>
+    <!--Proceso creativo section-->
+    <section id="proceso-creativo" class="Proceso-Creativo" aria-label="Proceso creativo">
+      <div class="Proceso-Creativo-Head">
+        <h2>Proceso creativo</h2>
+        <p>
+          Cada proyecto nace de una idea, evoluciona con exploración y termina en una experiencia visual clara.
+        </p>
+      </div>
 
-      <div class="portafolio-grid">
-        <article class="card">
-          <img src="https://miro.medium.com/0*hQve1WGpy9cSyCfl.png" alt="Proyecto Olla 3D" loading="lazy">
-          <div class="card-info">
-            <h3>Olla 3D</h3>
-            <span>Diseno 3D</span>
-          </div>
-          <button type="button" class="flecha" aria-label="Ver proyecto Olla 3D">&gt;</button>
+      <div class="Proceso-Creativo-Grid">
+        <article class="process-step">
+          <div class="step-icon"><i class="fa-solid fa-lightbulb"></i></div>
+          <h3>Descubrimiento</h3>
+          <p>Escucho objetivos, contexto y necesidades para detectar oportunidades reales de diseño.</p>
         </article>
 
-        <article class="card">
-          <img src="https://bluezooweb.com/wp-content/uploads/2024/11/Best-Websites-for-Web-Design-Inspiration-Brilliant-Examples-to-Boost-Your-Creativity-scaled.jpeg" alt="Proyecto Altra Inversiones" loading="lazy">
-          <div class="card-info">
-            <h3>Altra Inversiones</h3>
-            <span>Diseno Web</span>
-          </div>
-          <button type="button" class="flecha" aria-label="Ver proyecto Altra Inversiones">&gt;</button>
+        <article class="process-step">
+          <div class="step-icon"><i class="fa-solid fa-pen-ruler"></i></div>
+          <h3>Concepto visual</h3>
+          <p>Traduzco ideas en dirección visual: paleta, estilo y narrativa que conecte con la marca.</p>
         </article>
 
-        <article class="card">
-          <img src="https://miro.medium.com/1*VgUlJHPF9CBlvoIIKkq_1g.png" alt="Coleccion de disenos varios" loading="lazy">
-          <div class="card-info">
-            <h3>Disenos Varios</h3>
-            <span>Diseno</span>
-          </div>
-          <button type="button" class="flecha" aria-label="Ver disenos varios">&gt;</button>
+        <article class="process-step">
+          <div class="step-icon"><i class="fa-solid fa-cube"></i></div>
+          <h3>Prototipo</h3>
+          <p>Construyo propuestas interactivas para validar estructura, flujo de uso y experiencia.</p>
+        </article>
+
+        <article class="process-step">
+          <div class="step-icon"><i class="fa-solid fa-chart-line"></i></div>
+          <h3>Refinamiento</h3>
+          <p>Ajusto detalles finales con retroalimentacion para lograr una solucion solida y atractiva.</p>
         </article>
       </div>
     </section>
 
+    <!--Galería section-->
+    <section id="portafolio" class="portafolio">
+      <h2>Mi galería</h2>
+      <p>
+        Explora mis servicios de diseño UI/UX y 3D a profundidad. Mira el proceso.
+      </p>
+
+      <div class="portafolio-grid">
+        <article class="card">
+          <img src="../Images/Cámara 3D.png" alt="Proyecto Cámara 3D" loading="lazy">
+          <div class="card-info">
+            <h3>Cámara 3D</h3>
+            <span>Diseño 3D</span>
+          </div>
+          <button type="button" class="flecha" aria-label="Ver proyecto Cámara 3D"><i class="fa-solid fa-arrow-right"></i></button>
+        </article>
+
+        <article class="card">
+          <img src="../Images/Altra Inversiones.png" alt="Proyecto Altra Inversiones" loading="lazy">
+          <div class="card-info">
+            <h3>Altra Inversiones</h3>
+            <span>Diseño Web</span>
+          </div>
+          <button type="button" class="flecha" aria-label="Ver proyecto Altra Inversiones"><i class="fa-solid fa-arrow-right"></i></button>
+        </article>
+
+        <article class="card">
+          <img src="../Images/Mano 3D.png" alt="Mano 3D" loading="lazy">
+          <div class="card-info">
+            <h3>Mano 3D Esculpida</h3>
+            <span>Diseño</span>
+          </div>
+          <button type="button" class="flecha" aria-label="Ver proyecto Mano 3D"><i class="fa-solid fa-arrow-right"></i></button>
+        </article>
+      </div>
+    </section>
+
+    <!--Contacto section-->
     <section id="contacto" class="Contacto">
       <div class="Contacto-izq">
         <h2>Construyamos algo de otro mundo juntos</h2>
@@ -149,9 +198,9 @@
         </p>
 
         <div class="Redes" aria-label="Redes sociales">
-          <a class="Icono" href="#" aria-label="Instagram">Ig</a>
-          <a class="Icono" href="#" aria-label="LinkedIn">Lkdn</a>
-          <a class="Icono" href="#" aria-label="WhatsApp">Wha</a>
+          <a class="Icono" href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a class="Icono" href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a class="Icono" href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
         </div>
       </div>
 
@@ -172,23 +221,25 @@
     </section>
   </main>
 
+  <!--Footer section-->
   <footer id="blog" class="footer">
     <div class="footer-izq">
       <h3>JFM</h3>
-      <p>Disenador UI/UX creando experiencias modernas y atractivas</p>
+      <p>Diseñador UI/UX creando experiencias modernas y atractivas</p>
     </div>
 
-    <nav class="footer-centro" aria-label="Navegacion del pie de pagina">
-      <a href="#sobre-mi">Sobre mi</a>
+    <nav class="footer-centro" aria-label="Navegación del pie de página">
+      <a href="#sobre-mi">Sobre mí</a>
       <a href="#servicios">Servicios</a>
       <a href="#portafolio">Portafolio</a>
-      <a href="#blog">Blog</a>
+      <a href="#contacto">Contacto</a>
     </nav>
 
     <div class="footer-der">
       <div class="Redes">
-        <a class="Icono-Foot" href="#" aria-label="Instagram">Ig</a>
-        <a class="Icono-Foot" href="#" aria-label="LinkedIn">Lnkd</a>
+        <a class="Icono-Foot" href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a class="Icono-Foot" href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a class="Icono-Foot" href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
       </div>
     </div>
   </footer>
