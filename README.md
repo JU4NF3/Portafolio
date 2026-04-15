@@ -2,8 +2,6 @@
 
 # Juan Felipe Montañez — Portafolio Web
 
-<img src="<ruta-o-link-de-tu-banner>" width="100%" />
-
 ✨ *Creando experiencias digitales que combinan diseño, funcionalidad y creatividad* ✨
 
 </div>
