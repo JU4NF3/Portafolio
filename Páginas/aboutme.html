@@ -5,21 +5,31 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sobre Mí</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <link rel="stylesheet" href="../Styles/aboutme.css">
 </head>
 <body>
   
  <header class="navbar">
     <div>
-      <img class="logo" src="https://media.istockphoto.com/id/1251309191/es/vector/ronda-tres-l%C3%ADneas-logotipo-de-letras-j.jpg?s=612x612&w=0&k=20&c=R588FB8mQm09cIgryJYgyYBR8cDJ035kQPYQjfXEAkM=" alt="UX/UI-Image" width="48px">
+      <a href="home.html" aria-label="Ir al inicio">
+        <img class="logo" src="https://media.istockphoto.com/id/1251309191/es/vector/ronda-tres-l%C3%ADneas-logotipo-de-letras-j.jpg?s=612x612&w=0&k=20&c=R588FB8mQm09cIgryJYgyYBR8cDJ035kQPYQjfXEAkM=" alt="UX/UI-Image" width="48px">
+      </a>
     </div>
+    <input type="checkbox" id="menu-hamburguesa-about" class="menu-hamburguesa-checkbox">
+    <label for="menu-hamburguesa-about" class="menu-hamburguesa" aria-label="Abrir menu">
+      <i class="fa-solid fa-bars icon-open"></i>
+      <i class="fa-solid fa-xmark icon-close"></i>
+    </label>
     <nav class="menu">
-      <a href="#">Sobre mí</a>
-      <a href="#">Services</a>
-      <a href="#">Portafolio</a>
-      <a href="#">Blog</a>
+      <a href="aboutme.html">Sobre mí</a>
+      <a href="home.html#servicios">Servicios</a>
+      <a href="portafolio.html">Portafolio</a>
+      <a href="#contacto">Contacto</a>
     </nav>
   </header>
+
+  <!--Hero section-->
   <section class="hero">
 
     <div class="hero-text">
@@ -28,23 +38,28 @@
       <h1>Creador de experiencias y sueños</h1>
 
       <p>
-        Mi trabajo no solo refleja el diseño, refleja la esencia,
+        Mi trabajo no solo refleja el diseño, también refleja la esencia,
         el alma de cada idea y lleva a experimentar la marca.
         Mi pasión es llevar todo a un nivel superior de excelencia.
       </p>
 
       <div class="botones">
-        <button>Mi hoja de vida</button>
-        <button>Contáctame</button>
+        <a href="#footer">Mi hoja de vida</a>
+        <a href="#contacto">Contáctame</a>
       </div>
+    </div>
+
+    <div class="hero-visual" aria-hidden="true">
+      <img src="../Images/MI FOTO.jpeg" alt="Foto de Juan Felipe">
     </div>
   </section>
   
+  <!--About me and skills section-->
   <section class="About-Skills">
     <div class="Info-izq">
       <h2> Mi esencia </h2>
       <p class="P-Esencia">
-        Pienso que las interfaces tienen que tener un buen funcionamiento pero debe ser primordial expresar y hacer ver algo con estilo, diferente, personalmente me encantan las cosas minimalistas modernas y simples pero con estilo.
+        Pienso que las interfaces tienen que tener un buen funcionamiento, pero también debe ser primordial expresar y mostrar algo con estilo y diferente. Personalmente, me encantan las cosas minimalistas, modernas y simples, pero con estilo.
          </p>
    
       <div class="Estadisticas">
@@ -65,6 +80,7 @@
       <p> Clientes Felices </p>
             </div>
       </div>
+    </div>
       
    <div class="Der-Skills">
         <h2> Habilidades </h2>
@@ -99,45 +115,58 @@
   </div>
   </section>
 
-<section class="Contacto"> 
+<!--Contacto section-->
+<section id="contacto" class="Contacto"> 
   
   <div class="Contacto-izq">
     
     <h2> ¡Construyamos algo de otro mundo juntos! </h2>
-    <p> jmontanezv@gmail.com </p>
+    <p>
+      <a href="mailto:jmontanezv@gmail.com">jmontanezv@gmail.com</a>
+    </p>
     
     <div class="Redes">
-      <div class="Icono">Ig</div>
-      <div class="Icono">Lkdn</div>
-      <div class="Icono">Wha</div>
+      <a class="Icono" href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      <a class="Icono" href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a class="Icono" href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
     </div>
   </div>
   
   <div class="Contacto-der">
-    <input type="text" placeholder="Nombre Completo">
-    <input type="email" placeholder="Gmail">
-    <textarea placeholder="Mensaje"></textarea>
-    <button class="Boton-contacto">Enviar</button>
+    <form action="#" method="post">
+      <label for="nombre">Nombre Completo</label>
+      <input id="nombre" name="nombre" type="text" placeholder="Nombre Completo" required>
+
+      <label for="email">Correo</label>
+      <input id="email" name="email" type="email" placeholder="Gmail" required>
+
+      <label for="mensaje">Mensaje</label>
+      <textarea id="mensaje" name="mensaje" placeholder="Mensaje" required></textarea>
+
+      <button type="submit" class="Boton-contacto">Enviar</button>
+    </form>
   </div>
 </section>
 
-<footer class="footer">
+<!--Footer section-->
+<footer id="footer" class="footer">
   <div class="footer-izq">
     <h3> JFM </h3>
     <p> Diseñador UI/UX creando experiencias modernas y atractivas </p>
   </div>
   
   <div class="footer-centro">
-    <a href="#">Sobre mí</a>
-    <a href="#">Servicios</a>
-    <a href="#">Portafolio</a>
-    <a href="#">Blog</a>
+    <a href="aboutme.html">Sobre mí</a>
+    <a href="home.html#servicios">Servicios</a>
+    <a href="portafolio.html">Portafolio</a>
+    <a href="home.html#contacto">Contacto</a>
   </div>
   
   <div class="footer-der">
     <div class="Redes">
-      <div class="Icono-Foot">Ig</div>
-      <div class="Icono-Foot">Lnkd</div>
+      <a class="Icono-Foot" href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      <a class="Icono-Foot" href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a class="Icono-Foot" href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
     </div>
   </div>
   
