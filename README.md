@@ -1,6 +1,6 @@
 <div align="center">
 
-# <Juan Felipe Montañez> — Portafolio Web
+# Juan Felipe Montañez — Portafolio Web
 
 <img src="<ruta-o-link-de-tu-banner>" width="100%" />
 
